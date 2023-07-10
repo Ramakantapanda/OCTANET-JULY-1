@@ -1,0 +1,635 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #161616;
+  font-family: "Poppins";
+  scroll-behavior: smooth;
+}
+
+/* navbar */
+
+nav {
+  background-color: #2e2e2e;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  width: 100%;
+}
+.container {
+  padding-left: 8%;
+  padding-right: 8%;
+}
+
+.header {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.brand {
+  color: white;
+  text-decoration: none;
+  font-family: "Poppins";
+  font-size: 24px;
+  line-height: 48px;
+  font-weight: 700;
+}
+.logo img {
+  width: 21px;
+  height: 22px;
+}
+
+.logo {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.menu {
+  display: flex;
+}
+
+.menu .nav-item {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.menu .nav-item {
+  color: white;
+  list-style: none;
+  text-decoration: none;
+}
+.menu .nav-item .item a:hover {
+  color: #fcce5b;
+}
+
+.menu .nav-item .item a {
+  transition: 0.5 color ease-in-out;
+  font-size: 16px;
+  font-weight: 700;
+  font-family: "DM Sans";
+  line-height: 24px;
+  color: white;
+  list-style: none;
+  text-decoration: none;
+}
+.menu .nav-item i {
+  color: white;
+}
+
+.menu .logo-toggle {
+  display: none;
+}
+
+.header i {
+  display: none;
+}
+
+/* hero section */
+#hero {
+  padding-top: 135px;
+}
+.head-text {
+  color: white;
+  font-size: 36px;
+  font-weight: 700;
+  font-family: "Poppins";
+}
+.subtext {
+  color: #cdcdcd;
+  font-size: 20px;
+  line-height: 36px;
+  font-weight: 400;
+  font-family: "Poppins";
+}
+.flex2 .head-text {
+  font-size: 58px;
+  line-height: 74px;
+}
+.flex2 .right .boxes {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 24px;
+  gap: 40px;
+}
+.flex2 .right .boxes .box {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  width: 155px;
+  height: 157px;
+  padding: 16px;
+  background-color: #2e2e2e;
+}
+.flex2 .right .boxes .box h3 {
+  color: white;
+  font-size: 32px;
+  line-height: 48px;
+}
+.flex2 .right .boxes .box span {
+  color: #cdcdcd;
+  font-size: 18px;
+  line-height: 20px;
+  letter-spacing: 0.001em;
+}
+.btn {
+  display: flex;
+  justify-content: center;
+  padding-top: 56px;
+}
+
+.button-Primary {
+  width: 200px;
+  height: 56px;
+  background-color: white;
+  border: none;
+  transition: all 0.2s ease-in;
+  color: #161616;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 24px;
+}
+.button-Primary:hover {
+  background-color: #fcce5b;
+}
+
+.sponsor {
+  margin-top: 105px;
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+
+/* content */
+#content {
+  margin-top: 170px;
+}
+
+.content1 .head-text {
+  width: 463px;
+}
+
+.content1 .content-img {
+  width: 100%;
+  margin-top: 48px;
+}
+
+.content1 .img2 {
+  margin-bottom: 40px;
+  width: 100%;
+}
+
+.content1 .subtext {
+  font-size: 18px;
+  margin-bottom: 24px;
+}
+
+.flex2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 34px;
+}
+/* end content */
+
+/* magic */
+#magic {
+  margin-top: 160px;
+}
+
+#magic .heading {
+  display: grid;
+  grid-template-columns: 25% auto;
+  gap: 100px;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 32px;
+  margin-top: 50px;
+}
+.box-grid img {
+  width: 100%;
+}
+
+.box-grid {
+  width: fit-content;
+  position: relative;
+}
+
+.box-grid .position {
+  font-size: 64px;
+  position: relative;
+  right: 25px;
+  bottom: 55px;
+}
+
+.text {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px 0 20px;
+}
+
+.arrow {
+  display: flex;
+  gap: 24px;
+}
+
+.container .flex {
+  display: grid;
+  grid-template-columns: 40% auto;
+  row-gap: 56px;
+  position: relative;
+}
+.container .flex .texting .head-text {
+  line-height: 74px;
+  font-size: 58px;
+  margin-bottom: 24px;
+}
+.slide-img {
+  position: relative;
+  overflow: hidden;
+  padding: 20px;
+}
+.slide-img .user-container {
+  display: flex;
+  overflow-y: auto;
+  scroll-behavior: smooth;
+  gap: 35px;
+}
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.2989) -11.7%, rgba(0, 0, 0, 0.49) 113.78%);
+  transition: 0.5s ease;
+}
+.overlay:hover {
+  opacity: 1;
+}
+.bg-image {
+  position: relative;
+  width: 100%;
+}
+.overlay .head-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.user-container::-webkit-scrollbar {
+  display: none;
+}
+.slider-btn {
+  margin-top: 24px;
+  width: 60px;
+  height: 60px;
+  background-color: #2e2e2e;
+  border: none;
+  color: white;
+  font-size: 24px;
+  transition: all 0.2s ease-in;
+}
+.slider-btn:hover {
+  color: #2e2e2e;
+  background-color: white;
+}
+
+.works {
+  display: flex;
+  justify-content: space-between;
+  justify-items: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.see-our .subtext {
+  width: 453px;
+}
+.see-our .head-text {
+  font-size: 58px;
+}
+
+.porto {
+  display: flex;
+  justify-content: space-between;
+  gap: 100px;
+  align-items: center;
+  margin-top: 56px;
+}
+
+.desk .head-text {
+  margin-bottom: 24px;
+}
+
+.desk .subtext {
+  margin-bottom: 24px;
+}
+.about {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.about-us .head-text {
+  width: 410px;
+  font-size: 58px;
+  line-height: 74px;
+}
+.desk-us {
+  width: 538px;
+  text-align: right;
+}
+.comment {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  /* position: relative; */
+  margin-top: 100px;
+}
+.text-comment .subtext {
+  color: white;
+  z-index: 2;
+  position: absolute;
+  width: 770px;
+}
+.comment-img {
+  z-index: -1;
+}
+
+.text-comment .head-text {
+  font-size: 172px;
+  line-height: 223.94px;
+}
+
+footer {
+  margin-top: 160px;
+  padding: 56px 0 56px 0;
+}
+
+.footers {
+  display: flex;
+  justify-content: space-evenly;
+}
+.company {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.icons {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: none;
+  background-color: #161616;
+  color: white;
+  font-size: 16px;
+  transition: all 0.25s ease-in;
+}
+.icons:hover {
+  background-color: #dadada;
+  color: #161616;
+}
+.sosmeds {
+  display: flex;
+  gap: 12px;
+}
+
+.company img {
+  width: 21px;
+  height: 22px;
+}
+
+footer {
+  background: #2e2e2e;
+}
+.product h2 {
+  font-size: 18px;
+  margin-bottom: 12px;
+}
+
+.list-item {
+  margin-top: 10px;
+}
+
+.list-item a {
+  font-weight: 400;
+  text-decoration: none;
+  color: white;
+  line-height: 26px;
+  letter-spacing: -0.5px;
+  transition: all 0.2s ease-in-out;
+}
+.list-item a:hover {
+  color: #fcce5b;
+}
+.item {
+  display: flex;
+  justify-content: space-evenly;
+}
+/* responsive */
+@media only screen and (max-width: 768px) {
+  .footers {
+    display: flex;
+    justify-content: space-around;
+    gap: 100px;
+    flex-wrap: wrap;
+  }
+  .text-comment {
+    margin-top: -100px;
+  }
+  .comment {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .container .flex {
+    display: flex;
+    flex-direction: column;
+  }
+  .bg-image {
+    width: 100%;
+  }
+  .comment {
+    flex-direction: column;
+  }
+  .text-comment .head-text {
+    margin-bottom: -100px;
+    font-size: 100px;
+  }
+  .text-comment .subtext {
+    color: white;
+    position: static;
+    z-index: 2;
+    width: 100%;
+  }
+  .comment-img {
+    position: static;
+  }
+  .comment-img img {
+    width: 100%;
+  }
+  .texting .head-text {
+    margin-top: 24px;
+    width: 100%;
+    font-size: 38px;
+    line-height: 56px;
+  }
+  .about-us .head-text {
+    margin-top: 24px;
+    text-align: center;
+    width: 100%;
+    font-size: 38px;
+    line-height: 56px;
+  }
+  .see-our .head-text {
+    text-align: center;
+    width: 100%;
+    font-size: 38px;
+    line-height: 56px;
+  }
+  .flex2 .head-text {
+    font-size: 36px;
+    line-height: 58px;
+  }
+
+  .flex2 .right .boxes {
+    justify-content: space-between;
+  }
+
+  .flex2 .right .boxes .box {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 16px;
+    background-color: #2e2e2e;
+  }
+
+  .flex2 .right .boxes {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 24px;
+    gap: 10px;
+  }
+
+  .works {
+    flex-direction: column;
+  }
+  .see-our .subtext {
+    width: 100%;
+  }
+
+  .see-our .subtext {
+    text-align: center;
+  }
+  .porto {
+    flex-direction: column;
+  }
+  .porto .head-img img {
+    width: 100%;
+  }
+
+  .about {
+    flex-direction: column;
+    align-items: center;
+  }
+  .desk-us {
+    align-items: center;
+    text-align: center;
+    width: 100%;
+  }
+  .header i {
+    display: block;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+  }
+  .menu {
+    /* display: none; */
+    transition: all 0.3s ease-in-out;
+    flex-direction: column;
+    position: fixed;
+    padding: 16px 8% 16px 8%;
+    width: 100%;
+    height: fit-content;
+    right: 0;
+    top: -100%;
+    background-color: #2e2e2e;
+    z-index: 100;
+  }
+  .active {
+    top: -0%;
+  }
+  .menu .nav-item {
+    flex-direction: column;
+    padding-top: 28px;
+  }
+  .menu .nav-item {
+    gap: 40px;
+  }
+  .menu .logo-toggle {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .logo-toggle i {
+    color: white;
+    font-size: 18px;
+  }
+
+  /* hero section */
+  .button-Primary {
+    width: 150px;
+  }
+  .sponsor {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    gap: 30px;
+  }
+
+  .flex2 {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  #content {
+    margin-top: 100px;
+  }
+  .content1 .head-text {
+    width: 100%;
+  }
+  #magic {
+    margin-top: 100px;
+  }
+  #magic .heading {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 24px;
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    margin-top: 50px;
+  }
+  .flex .right .boxes .box h3 {
+    color: white;
+    font-size: 38px;
+    line-height: 68px;
+  }
+}
